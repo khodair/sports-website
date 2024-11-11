@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Navbar Custom Styling */
+.navbar {
+    padding: 10px 20px;
+    background-color: black;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+.navbar-nav .nav-link{
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover{
+    color:#555;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #ff4d4d;
+    border-radius: 2px;
+}
+
+
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh;
+    background: url(file:///C:/Users/El2Sr/Desktop/sports%20website/img/paragliding-7518545_1280.jpg),transparent;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    right: 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    opacity: 0; /* Initial opacity for fade-in animation */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    opacity: 0; /* Initial opacity for slide-in animation */
+    transform: translateY(20px); /* Start slightly below for slide-in effect */
+}
+
+.btn-primary {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* CSS Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Apply Animations */
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slide-in {
+    animation: slideIn 1s ease-out 0.5s forwards; /* Delayed start for effect */
+}
+.sports-section {
+    background-color: #f5f5f5;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+/* Animation for Cards */
+.animated-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Apply animation when the card is in view */
+.animated-card.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Example Keyframe Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation */
+.animated-card {
+    animation: fadeInUp 1s ease-out forwards;
+}
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+    border-radius: 5px 5px 0 0;
+    max-height: 200px;
+    object-fit: cover;
+}
+.card-title {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #555;
+    font-size: 0.9rem;
+}
+/* News Section Styles */
+.news-section {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    transition: .5s;
+}
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scalex(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 5px 5px 0 0;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #333;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.contact-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: -30px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 70px;
+}
+
+.contact-section button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #555;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .6s;
+    font-size: 1.2rem;
+    margin: auto;
+    width: 25%;
+    margin-bottom: -30px;
+}
+.contact-section button:hover{
+    background-color: silver;
+}
+.contact-section #formMessage {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+}
+
+
+
+   
+
+
+
+
+
+
